@@ -12,7 +12,7 @@ OUTPUT_FILE = "test.txt"
 OUTPUT_GOOD = "good.txt"
 OUTPUT_MATCH = "match.txt"
 
-WORDS = ["museum", "museet", "muzeum", "museo"]
+WORDS = ["muse", "muze"]
 
 open(OUTPUT_FILE, 'w').close()
 open(OUTPUT_GOOD, 'w').close()
@@ -36,7 +36,7 @@ def getTwitterInfo(username):
 def urlMatch(url1, url2):
     parsed1 = urlparse(url1)
     parsed2 = urlparse(url2)
-    if parsed1.netloc == parsed2.netloc:
+    if parsed1.netloc + parsed1.path == parsed2.netloc + parsed2.path:
         return True
     else:
         return False
