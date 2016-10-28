@@ -12,7 +12,7 @@ OUTPUT_FILE = "test.txt"
 OUTPUT_GOOD = "good.txt"
 OUTPUT_MATCH = "match.txt"
 
-WORDS = ["muse", "muze"]
+WORDS = ["musee", "museum", "museo", "muzeum"]
 
 open(OUTPUT_FILE, 'w').close()
 open(OUTPUT_GOOD, 'w').close()
