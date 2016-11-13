@@ -1,0 +1,1 @@
+A script that attempts to find missing Twitter handles of museums to add to Wikidata, based on a query of museums with website urls but no Twitter handles. It scrapes the website to find possible candidates, then saves the results in a QuickStatements-ready format. The output needs to be looked over manually, but it has produced many good results.
